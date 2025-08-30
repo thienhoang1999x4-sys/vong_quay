@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <title>Vòng Quay May Mắn</title>
+</head>
+<body>
+  <h2>Vòng Quay Random</h2>
+  <button onclick="quay()">Quay!</button>
+  <p id="ketqua"></p>
+
+  <script>
+    const danhSach = [
+        "Chè dừa non sầu đác",
+        "Chè khoai dẻo thẩm cẩm",
+        "chè khoai dẻo truyền thống",
+        "Chè khoai dẻo cốm",
+        "Chè khoai dẻo trân châu phomai",
+        "Chè khoai dẻo caramen",
+        "Chè khoai dẻo khúc bạch",
+        "Chè dùa non thập cẩm",
+        "Chè dùa non hạt đác",
+        "Chè dùa non cốm đác",
+        "Chè dùa non khúc bạch",
+        "Chè dùa non caramen",
+        "Chè dùa non trân châu phomai",
+        "Chè khúc bạch",
+        "Chè mãng cầu thốt nốt",
+        "Chè mãng cầu thập cẩm",
+        "Chè sương sáo trân châu",
+        "Chè sương sáo trân châu phomai",
+        "Chè caramen trân châu phomai",
+        "Chè caramen thập cẩm",
+        "Sữa chua lá nếp trân châu",
+        "Sữa chua lá nếp trân châu phomai",
+        "Sữa chua lá nếp thốt nốt",
+        "Sữa chua lá nếp đác rim",
+        "Sữa chua mãng cầu trân châu phomai",
+        "Sữa chua mãng cầu thốt nốt",
+        "Sữa chua mãng cầu đác rim",
+        "Sữa chua thập cẩm",
+        "Sữa chua mãng cầu thập cẩm"
+    ];
+
+    function quay() {
+      const index = Math.floor(Math.random() * danhSach.length);
+      document.getElementById("ketqua").textContent = "Kết quả: " + danhSach[index];
+    }
+  </script>
+</body>
+</html>
